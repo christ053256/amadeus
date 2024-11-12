@@ -1,0 +1,47 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 30px;
+    color: #382d03;
+    font-weight: 700;
+    user-select: none;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #382d03;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Center the pseudo-element */
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.2s;
+    transform: translateX(-50%); /* Shift it back to truly center it */
+}
+
+
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
