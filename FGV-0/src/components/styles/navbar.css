@@ -6,24 +6,39 @@
     padding: 20px 10%;
     background: transparent;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center items vertically */
     z-index: 100;
 }
 
-.logo{
-    font-size: 30px;
-    color: #382d03;
-    font-weight: 700;
-    user-select: none;
+.navbar-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
-.navbar a{
+.logo {
+    font-size: 35px; 
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    user-select: none;
+    margin: 0; 
+    line-height: 1;
+}
+
+.navbar {
+    display: flex; /* Use flexbox for navbar items */
+}
+
+.navbar a {
     position: relative;
     font-size: 18px;
-    color: #382d03;
+    color: white;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 25px; /* Space between links */
+    user-select: none;
 }
 
 .navbar a::before {
@@ -34,14 +49,22 @@
     width: 0%;
     height: 2px;
     background: white;
-    transition: 0.2s;
+    transition: width 0.2s; /* Smooth transition */
     transform: translateX(-50%); /* Shift it back to truly center it */
 }
 
-
-
-.navbar a:hover::before{
-    width: 100%;
+.navbar a:hover::before {
+    width: 100%; /* Underline effect on hover */
 }
 
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+   .navbar-container {
+       flex-direction: column; /* Stack logo and nav vertically on smaller screens */
+   }
 
+   .navbar a {
+       margin-left: 0; /* Remove left margin in mobile view */
+       margin-bottom: 10px; /* Space between links in vertical layout */
+   }
+}

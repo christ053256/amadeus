@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-famili: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: url('./src/components/assets/img/robot-bg1.svg') no-repeat;
+    /*background: url('./src/components/assets/img/robot-bg1.svg') no-repeat;*/
+    background: gray;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
