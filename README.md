@@ -4,7 +4,7 @@
 ### Programing Language && Database
 - [x] C.
 - [x] JavaScript
-- [ ] React JS
+- [x] React JS
 - [ ] Python
 - [ ] PostgreSQL
 
@@ -14,3 +14,9 @@
 ## Animated Portfolio Feature
 
 The animated portfolio feature showcases my projects with smooth animations using `framer-motion`. It provides an engaging and interactive way to explore my work.
+
+### How to Run the Animated Portfolio
+
+1. Navigate to the `portfolio` directory.
+2. Open `index.html` in your preferred web browser.
+3. Enjoy the interactive and animated portfolio showcasing my projects.
