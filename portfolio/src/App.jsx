@@ -1,17 +1,21 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import NavBar from './components/NavBar';
-import MainContent from './components/MainContent';
-import Projects from './components/Projects';
+import './App.css';
 
-const App = () => {
+//Components
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+
+
+function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <MainContent />
-      <Projects />
-    </div>
+    <>
+      <div>
+        <Navigation />
+        <Home />
+        {/* Other components can be added here */}
+      </div>
+    </>
   );
-};
+}
 
 export default App;
